@@ -10,7 +10,7 @@ def find_lowest_cost_path(airports, start, end):
         if current_airport == end:
             if current_cost < lowest_cost:
                 lowest_cost = current_cost
-                lowest_cost_path = current_path.append(current_airport)
+                lowest_cost_path = current_path[:]
             return lowest_cost_path, lowest_cost
 
         # Check all possible connections from the current airport
@@ -60,4 +60,4 @@ else:
         print(f"The path from {start_point} to {end_point} is not found.")
     else:
         print("Lowest Cost Path:", path)
-        print("Cost of Path:",cost)
+        print("Cost of Path:", cost)
