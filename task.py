@@ -60,4 +60,4 @@ else:
         print(f"The path from {start_point} to {end_point} is not found.")
     else:
         print("Lowest Cost Path:", path)
-        print("Cost of Path:", cost)
+        print("Cost of Path:",cost)
